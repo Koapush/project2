@@ -77,6 +77,13 @@ function covid() {
   // fill("white")
   // ellipse(obj.x, obj.y, 30, 30)
 
+  //pupil
+  fill("red")
+  eyeX = map(ball.x, 0, width, 240, 260, true);
+  eyeY = map(ball.y, 0, height, 90, 110, true);
+  ellipse(eyeX, eyeY, 10, 10)
+
+
   //little yellow stuff
   for (let i = 0; i < 10; i += 1) {
     fill("yellow")
