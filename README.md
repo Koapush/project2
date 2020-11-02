@@ -1,6 +1,6 @@
 # DONT LET ME DOWN
 
-![Screenshot](screenshot)
+![Screenshot](screenshot.png)
 
 ## Description
 
