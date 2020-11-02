@@ -70,11 +70,12 @@ function covid() {
   console.log(frameCount);
   obj.x = 250 + 80 * cos(frameCount);
   obj.y = 120 + 80 * sin(frameCount);
+
   //eye
   fill(255, 0, 255)
   ellipse(obj.x, obj.y, obj.w, obj.h);
-  fill("white")
-  ellipse(obj.x, obj.y, 30, 30)
+  // fill("white")
+  // ellipse(obj.x, obj.y, 30, 30)
 
   //little yellow stuff
   for (let i = 0; i < 10; i += 1) {
