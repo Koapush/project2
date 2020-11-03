@@ -107,6 +107,7 @@ function draw() {
 
 
 function keyPressed() {
+  // if (keyCode === SPACE) {
   if (gameState === WELCOME) {
     gameState++;
   } else if (gameState === READY) {
@@ -114,7 +115,9 @@ function keyPressed() {
     ball.setVelocity(ready.pos.copy().mult(0.1));
     gameState++;
 
+    // }
   }
+
 }
 
 // function reset() {
