@@ -13,6 +13,7 @@ class Ball {
     draw() {
         fill(255);
         ellipse(this.pos.x, this.pos.y, this.size, this.size);
+
     }
 
     checkBorder() {
@@ -20,11 +21,13 @@ class Ball {
             this.vel.x *= -1;
             this.pos.x = this.pos.x < width / 2 ? this.size : width - this.size;
             // console.log("hit x");
+            wallSound.play();
         }
         if (this.pos.y < this.size) {
             this.vel.y *= -1;
             this.pos.y = this.pos.y < height / 2 ? this.size : height - this.size;
             // console.log("hit y");
+            wallSound.play();
         }
     }
 

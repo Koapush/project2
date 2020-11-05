@@ -5,6 +5,7 @@ class Virus {
         this.acc = createVector(0, 0);
         this.size = 50;
         this.color = 240;
+        this.length = 75;
 
     }
 
@@ -49,6 +50,11 @@ class Virus {
         noStroke();
         fill(this.color, 0, this.color);
         ellipse(this.pos.x, this.pos.y, this.size, this.size);
+        fill(225)
+        rect(this.pos.x - 38, this.pos.y - 48, 75, 6, 10)
+        fill("red")
+        rect(this.pos.x - 38, this.pos.y - 48, this.length, 8, 10)
+
         for (let i = 0; i < 10; i += 1) {
             fill("yellow")
             let offset = p5.Vector.random2D().mult(random(5, 40));
@@ -61,6 +67,7 @@ class Virus {
 
     fade() {
         this.color -= 60;
+        this.length -= 25;
     }
 
 }

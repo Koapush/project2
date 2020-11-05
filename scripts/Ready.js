@@ -33,4 +33,12 @@ class Ready {
         print('drawing ready');
         pop();
     }
+
+    times() {
+        fill(255);
+        ellipse(552, 50, 50, 50);
+        fill(0);
+        textSize(30);
+        text(times, 545, 35, 30);
+    }
 }
