@@ -23,22 +23,22 @@ class Ready {
 
 
     draw() {
-        push();
         stroke(255);
         fill(255);
         line(this.center.x, this.center.y, this.actualPos.x, this.actualPos.y);
         ellipse(this.actualPos.x, this.actualPos.y, this.size, this.size);
         ellipse(this.center.x, this.center.y, this.length * 0.8, this.length * 0.8);
 
-        print('drawing ready');
-        pop();
+
     }
 
     times() {
-        fill(255);
-        ellipse(552, 50, 50, 50);
         fill(0);
-        textSize(30);
-        text(times, 545, 35, 30);
+        textFont('Orbitron');
+        textAlign(CENTER, CENTER);
+        textSize(28);
+        text(times, 290, 583, 30);
+
+
     }
 }

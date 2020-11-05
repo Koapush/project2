@@ -50,10 +50,16 @@ class Virus {
         noStroke();
         fill(this.color, 0, this.color);
         ellipse(this.pos.x, this.pos.y, this.size, this.size);
+
         fill(225)
         rect(this.pos.x - 38, this.pos.y - 48, 75, 6, 10)
         fill("red")
         rect(this.pos.x - 38, this.pos.y - 48, this.length, 8, 10)
+        if (this.length < 75) {
+            this.length = this.length + 0.1;
+            rect(this.pos.x - 38, this.pos.y - 48, this.length, 8, 10)
+        }
+
 
         for (let i = 0; i < 10; i += 1) {
             fill("yellow")
@@ -65,9 +71,8 @@ class Virus {
 
 
 
-    fade() {
-        this.color -= 60;
-        this.length -= 25;
+    blood() {
+        this.length -= 30;
     }
 
 }
