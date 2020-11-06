@@ -52,12 +52,12 @@ class Virus {
         ellipse(this.pos.x, this.pos.y, this.size, this.size);
 
         fill(225)
-        rect(this.pos.x - 38, this.pos.y - 48, 75, 6, 10)
+        rect(this.pos.x - 38, this.pos.y - 48, 75, 7, 10)
         fill("red")
-        rect(this.pos.x - 38, this.pos.y - 48, this.length, 8, 10)
+        rect(this.pos.x - 38, this.pos.y - 48, this.length, 7, 10)
         if (this.length < 75) {
             this.length = this.length + 0.1;
-            rect(this.pos.x - 38, this.pos.y - 48, this.length, 8, 10)
+            rect(this.pos.x - 38, this.pos.y - 48, this.length, 7, 10)
         }
 
 
