@@ -18,6 +18,7 @@ Lose if you run out of 9 chances.
 Jyoti tj1059@nyu.edu
 Cara cy1503@nyu.edu
 
-## Acknowledgements (To be finished)
+## Acknowledgements
 
-// Acknowledge the source of code and assets, any help you got, and work that inspired the project.
+Inspiration: https://www.gdcvault.com/play/1016487/Juice-It-or-Lose;
+Sound: https://downloads.khinsider.com/game-soundtracks/album/super-mario-world-original-soundtrack.
